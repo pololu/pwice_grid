@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name          = 'pwice_grid'
-  s.version       = '5.0.1'
+  s.version       = '5.0.2'
   s.authors       = ['Yuri Leikind and contributors']
   s.email         = ['ryantm@pololu.com']
   s.homepage      = 'https://github.com/pololu/pwice_grid'
