@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name          = 'pwice_grid'
-  s.version       = '5.0.2'
+  s.version       = '6.1.0'
   s.authors       = ['Yuri Leikind and contributors']
   s.email         = ['ryantm@pololu.com']
   s.homepage      = 'https://github.com/pololu/pwice_grid'
@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   s.date          = '2021-03-31'
 
-  s.add_dependency 'rails', '>= 5.0', '< 7'
+  s.add_dependency 'rails', '>= 6.1', '< 7'
   s.add_dependency 'kaminari',          ['~> 1.1']
   s.add_dependency 'coffee-rails',      ['> 3.2']
 
