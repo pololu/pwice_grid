@@ -10,6 +10,7 @@ module Wice
       @tempfile = Tempfile.new(name)
       @tempfile.chmod 0640
       @tempfile.set_encoding(encoding) unless encoding.blank?
+      @tempfile.write("\ufeff") # add byte order mark to help with Excel import
       @csv = CSV.new(@tempfile, col_sep: field_separator)
     end
 
