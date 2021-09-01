@@ -7,7 +7,7 @@ module Wice
     attr_reader :tempfile
 
     def initialize(name, field_separator, encoding = nil)  #:nodoc:
-      @tempfile = Tempfile.new(name)
+      @tempfile = Tempfile.new(name, mode: 640)
       @tempfile.set_encoding(encoding) unless encoding.blank?
       @csv = CSV.new(@tempfile, col_sep: field_separator)
     end
